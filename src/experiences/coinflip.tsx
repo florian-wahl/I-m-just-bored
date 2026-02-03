@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import type { Experience } from './index'
 
+/* eslint-disable react-refresh/only-export-components */
 function CoinFlipContent() {
   const [result, setResult] = useState<'Heads' | 'Tails' | null>(null)
   return (

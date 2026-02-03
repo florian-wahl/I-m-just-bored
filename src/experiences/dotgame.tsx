@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import type { Experience } from './index'
 
+/* eslint-disable react-refresh/only-export-components */
 function DotGameContent() {
   const [clicks, setClicks] = useState(0)
   const done = clicks >= 10

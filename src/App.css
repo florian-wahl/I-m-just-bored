@@ -1,165 +1,165 @@
 /* Mobile-first layout */
 .app {
-  margin: 0 auto;
-  padding: 1.5rem;
-  max-width: 36rem;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  box-sizing: border-box;
+    margin: 0 auto;
+    padding: 1.5rem;
+    max-width: 36rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 .title {
-  margin: 0 0 0.5rem;
-  font-size: 1.75rem;
-  font-weight: 700;
-  line-height: 1.2;
+    margin: 0 0 0.5rem;
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.2;
 }
 
 .subtitle {
-  margin: 0 0 1.5rem;
-  font-size: 1rem;
-  opacity: 0.85;
+    margin: 0 0 1.5rem;
+    font-size: 1rem;
+    opacity: 0.85;
 }
 
 /* Buttons */
 .btn {
-  font: inherit;
-  cursor: pointer;
-  border: none;
-  border-radius: 0.5rem;
-  padding: 0.75rem 1.5rem;
-  font-weight: 600;
-  transition: transform 0.1s ease, opacity 0.15s ease;
+    font: inherit;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    transition: transform 0.1s ease, opacity 0.15s ease;
 }
 
 .btn:active {
-  transform: scale(0.98);
+    transform: scale(0.98);
 }
 
 .btn-primary {
-  background: var(--btn-primary-bg, #3b82f6);
-  color: var(--btn-primary-color, #fff);
-  font-size: 1.125rem;
-  padding: 1rem 2rem;
-  margin-bottom: 1.5rem;
+    background: var(--btn-primary-bg, #3b82f6);
+    color: var(--btn-primary-color, #fff);
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .btn-primary:hover {
-  opacity: 0.95;
+    opacity: 0.95;
 }
 
 .btn-secondary {
-  background: var(--btn-secondary-bg, transparent);
-  color: var(--btn-secondary-color, inherit);
-  border: 2px solid currentColor;
-  font-size: 0.9375rem;
-  margin-top: 1rem;
+    background: var(--btn-secondary-bg, transparent);
+    color: var(--btn-secondary-color, inherit);
+    border: 2px solid currentColor;
+    font-size: 0.9375rem;
+    margin-top: 1rem;
 }
 
 .btn-secondary:hover {
-  opacity: 0.9;
+    opacity: 0.9;
 }
 
 /* Card */
 .card {
-  width: 100%;
-  padding: 1.5rem;
-  border-radius: 0.75rem;
-  background: var(--card-bg, rgba(255, 255, 255, 0.06));
-  border: 1px solid var(--card-border, rgba(255, 255, 255, 0.12));
-  text-align: left;
-  box-sizing: border-box;
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    background: var(--card-bg, rgba(255, 255, 255, 0.06));
+    border: 1px solid var(--card-border, rgba(255, 255, 255, 0.12));
+    text-align: left;
+    box-sizing: border-box;
 }
 
 .card-title {
-  margin: 0 0 1rem;
-  font-size: 0.875rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  opacity: 0.8;
+    margin: 0 0 1rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    opacity: 0.8;
 }
 
 .card-content {
-  font-size: 1.0625rem;
-  line-height: 1.6;
+    font-size: 1.0625rem;
+    line-height: 1.6;
 }
 
 .card-content p {
-  margin: 0 0 0.75rem;
+    margin: 0 0 0.75rem;
 }
 
 .card-content p:last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 /* Experience-specific (buttons inside card, dot game, etc.) */
 .experience-button {
-  font: inherit;
-  cursor: pointer;
-  padding: 0.6rem 1.2rem;
-  border-radius: 0.5rem;
-  border: 1px solid var(--card-border, rgba(255, 255, 255, 0.2));
-  background: var(--btn-secondary-bg, transparent);
-  color: inherit;
-  font-weight: 500;
+    font: inherit;
+    cursor: pointer;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--card-border, rgba(255, 255, 255, 0.2));
+    background: var(--btn-secondary-bg, transparent);
+    color: inherit;
+    font-weight: 500;
 }
 
 .experience-button:hover {
-  opacity: 0.9;
+    opacity: 0.9;
 }
 
 .experience-result {
-  margin-top: 1rem;
-  font-weight: 500;
+    margin-top: 1rem;
+    font-weight: 500;
 }
 
 .experience-subtitle {
-  margin: 0.25rem 0 0;
-  font-size: 0.9rem;
-  opacity: 0.8;
+    margin: 0.25rem 0 0;
+    font-size: 0.9rem;
+    opacity: 0.8;
 }
 
 .dot-game {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
 .dot {
-  width: 4rem;
-  height: 4rem;
-  border-radius: 50%;
-  background: var(--btn-primary-bg, #3b82f6);
-  border: none;
-  cursor: pointer;
-  transition: transform 0.1s ease;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background: var(--btn-primary-bg, #3b82f6);
+    border: none;
+    cursor: pointer;
+    transition: transform 0.1s ease;
 }
 
 .dot:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .dot:active {
-  transform: scale(0.95);
+    transform: scale(0.95);
 }
 
 /* Larger screens */
 @media (min-width: 480px) {
-  .app {
-    padding: 2rem;
-  }
+    .app {
+        padding: 2rem;
+    }
 
-  .title {
-    font-size: 2rem;
-  }
+    .title {
+        font-size: 2rem;
+    }
 
-  .card {
-    padding: 2rem;
-  }
+    .card {
+        padding: 2rem;
+    }
 }

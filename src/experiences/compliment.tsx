@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import type { Experience } from './index'
 
+/* eslint-disable react-refresh/only-export-components */
 const COMPLIMENTS = [
   'Your vibe is legally distinct from chaos.',
   'You seem like someone who owns at least one good pen.',

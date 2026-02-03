@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import type { Experience } from './index'
 
+/* eslint-disable react-refresh/only-export-components */
 const PROPHECIES = [
   'Soon, you will remember a song from 2009.',
   'A snack is in your future.',
