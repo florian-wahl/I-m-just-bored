@@ -26,9 +26,20 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  min-height: 100dvh;
+  height: 100%;
+  overflow: hidden;
   overflow-x: hidden;
+  position: fixed;
+  width: 100%;
+  inset: 0;
 }
