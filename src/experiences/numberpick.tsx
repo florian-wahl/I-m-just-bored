@@ -2,18 +2,24 @@ import { useState } from 'react'
 import type { Experience } from './index'
 
 /* eslint-disable react-refresh/only-export-components */
+const MIN = 1
+const MAX = 10
+
+function randomInt(min: number, max: number): number {
+  return Math.floor(Math.random() * (max - min + 1)) + min
+}
+
 function NumberPickContent() {
   const [result, setResult] = useState<number | null>(null)
   return (
     <div>
+      <p>When in doubt, let fate pick.</p>
       <button
         type="button"
         className="experience-button"
-        onClick={() =>
-          setResult(Math.floor(Math.random() * 10) + 1)
-        }
+        onClick={() => setResult(randomInt(MIN, MAX))}
       >
-        Pick a number 1–10
+        Pick a number {MIN}–{MAX}
       </button>
       {result !== null && (
         <>

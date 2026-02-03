@@ -9,7 +9,15 @@ const EXCUSES = [
   'I had to water my plastic plant.',
   'My WiFi was feeling shy.',
   'I was waiting for a sign. It was delayed.',
+  'My charger and I had a disagreement.',
+  'I was debugging my sleep schedule.',
+  'A cloud was in the way.',
+  'My motivation is in a different time zone.',
 ]
+
+function pickRandom<T>(arr: readonly T[]): T {
+  return arr[Math.floor(Math.random() * arr.length)]
+}
 
 function ExcuseContent() {
   const [text, setText] = useState<string | null>(null)
@@ -18,9 +26,7 @@ function ExcuseContent() {
       <button
         type="button"
         className="experience-button"
-        onClick={() =>
-          setText(EXCUSES[Math.floor(Math.random() * EXCUSES.length)] ?? '')
-        }
+        onClick={() => setText(EXCUSES.length > 0 ? pickRandom(EXCUSES) : null)}
       >
         Generate a random excuse
       </button>

@@ -4,15 +4,11 @@ import type { Experience } from './index'
 /* eslint-disable react-refresh/only-export-components */
 function YesNoContent() {
   const [result, setResult] = useState<'Yes' | 'No' | null>(null)
+  const flip = () => setResult(Math.random() < 0.5 ? 'Yes' : 'No')
   return (
     <div>
-      <button
-        type="button"
-        className="experience-button"
-        onClick={() =>
-          setResult(Math.random() < 0.5 ? 'Yes' : 'No')
-        }
-      >
+      <p>Stuck between two options? Let the coin of fate decide.</p>
+      <button type="button" className="experience-button" onClick={flip}>
         Yes or No?
       </button>
       {result !== null && (

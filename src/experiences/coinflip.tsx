@@ -4,15 +4,11 @@ import type { Experience } from './index'
 /* eslint-disable react-refresh/only-export-components */
 function CoinFlipContent() {
   const [result, setResult] = useState<'Heads' | 'Tails' | null>(null)
+  const flip = () => setResult(Math.random() < 0.5 ? 'Heads' : 'Tails')
   return (
     <div>
-      <button
-        type="button"
-        className="experience-button"
-        onClick={() =>
-          setResult(Math.random() < 0.5 ? 'Heads' : 'Tails')
-        }
-      >
+      <p>Let the coin decide. Then pretend you&apos;ll abide.</p>
+      <button type="button" className="experience-button" onClick={flip}>
         Flip a coin
       </button>
       {result !== null && (

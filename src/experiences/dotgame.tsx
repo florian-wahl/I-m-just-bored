@@ -2,14 +2,17 @@ import { useState } from 'react'
 import type { Experience } from './index'
 
 /* eslint-disable react-refresh/only-export-components */
+const TARGET_CLICKS = 10
+
 function DotGameContent() {
   const [clicks, setClicks] = useState(0)
-  const done = clicks >= 10
+  const done = clicks >= TARGET_CLICKS
+  const remaining = TARGET_CLICKS - clicks
   return (
     <div className="dot-game">
       {!done ? (
         <>
-          <p>Click the dot {10 - clicks} more time{10 - clicks === 1 ? '' : 's'}.</p>
+          <p>Click the dot {remaining} more time{remaining === 1 ? '' : 's'}. No prize. No point. Just clicks.</p>
           <button
             type="button"
             className="dot"

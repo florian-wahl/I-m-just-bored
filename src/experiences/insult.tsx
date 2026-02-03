@@ -9,7 +9,15 @@ const INSULTS = [
   'Someone once left you on read. They were right.',
   'You are the human version of a loading spinner.',
   'Your vibe is that of a participation trophy.',
+  'You have the confidence of a WiFi bar with one notch.',
+  'Your aura is "default settings."',
+  'You are the human equivalent of a "loading..." message that never finishes.',
+  'Someone has definitely used you as a reference for "fine, I guess."',
 ]
+
+function pickRandom<T>(arr: readonly T[]): T {
+  return arr[Math.floor(Math.random() * arr.length)]
+}
 
 function InsultContent() {
   const [text, setText] = useState<string | null>(null)
@@ -18,9 +26,7 @@ function InsultContent() {
       <button
         type="button"
         className="experience-button"
-        onClick={() =>
-          setText(INSULTS[Math.floor(Math.random() * INSULTS.length)] ?? '')
-        }
+        onClick={() => setText(INSULTS.length > 0 ? pickRandom(INSULTS) : null)}
       >
         Generate a useless insult
       </button>
