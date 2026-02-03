@@ -9,7 +9,9 @@
   --arcade-text-dim: #888;
   --arcade-accent: #c9a227;
   --arcade-accent-dim: rgba(201, 162, 39, 0.5);
-  font-family: "Press Start 2P", "Courier New", monospace;
+  --font-display: "Press Start 2P", "Courier New", monospace;
+  --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: var(--font-display);
   line-height: 1.6;
   font-weight: 400;
   color: var(--arcade-text);
