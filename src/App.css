@@ -27,7 +27,7 @@
 
 .btn-primary {
   padding: clamp(1.25rem, 6vw, 1.75rem) clamp(1.75rem, 10vw, 3rem);
-  font-size: clamp(0.6875rem, 3.5vw, 0.875rem);
+  font-size: clamp(0.75rem, 4vw, 1rem);
   line-height: 1.6;
   color: var(--arcade-bg);
   background: var(--arcade-glow);
@@ -63,7 +63,7 @@
 .card-title {
   font-family: var(--font-display);
   margin: 0 0 1rem;
-  font-size: clamp(0.625rem, 2.2vw, 0.75rem);
+  font-size: clamp(0.6875rem, 2.5vw, 0.875rem);
   color: var(--arcade-glow);
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -72,7 +72,7 @@
 /* Main text and commentary – readable body font */
 .card-content {
   font-family: var(--font-body);
-  font-size: clamp(1rem, 2.8vw, 1.125rem);
+  font-size: clamp(1.0625rem, 3vw, 1.25rem);
   line-height: 1.6;
   color: var(--arcade-text);
 }
@@ -88,7 +88,7 @@
 /* Secondary = “Still bored” */
 .btn-secondary {
   padding: 0.85rem 1.5rem;
-  font-size: clamp(0.625rem, 2.2vw, 0.75rem);
+  font-size: clamp(0.6875rem, 2.5vw, 0.875rem);
   color: var(--arcade-glow);
   background: transparent;
   border: 3px solid var(--arcade-glow);
@@ -108,7 +108,7 @@
   margin-top: 1rem;
   margin-bottom: 1.25rem;
   padding: 0.6rem 1.15rem;
-  font-size: clamp(0.5625rem, 2.5vw, 0.75rem);
+  font-size: clamp(0.625rem, 2.8vw, 0.8125rem);
   color: var(--arcade-bg);
   background: var(--arcade-glow);
   border: 2px solid var(--arcade-glow);
@@ -124,7 +124,7 @@
   font-family: var(--font-body);
   margin-top: 1.5rem;
   margin-bottom: 0;
-  font-size: clamp(1rem, 2.8vw, 1.125rem);
+  font-size: clamp(1.0625rem, 3vw, 1.25rem);
   font-weight: 400;
   color: var(--arcade-text);
 }
@@ -132,7 +132,7 @@
 .experience-subtitle {
   font-family: var(--font-body);
   margin-top: 0.75rem;
-  font-size: clamp(0.875rem, 2.2vw, 1rem);
+  font-size: clamp(0.9375rem, 2.5vw, 1.0625rem);
   color: var(--arcade-text-dim);
 }
 
@@ -175,19 +175,19 @@
   }
 
   .card-title {
-    font-size: 0.625rem;
+    font-size: 0.75rem;
   }
 
   .card-content {
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
 
   .experience-button {
-    font-size: 0.625rem;
+    font-size: 0.6875rem;
   }
 
   .experience-subtitle {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
 }
 
@@ -202,23 +202,23 @@
   }
 
   .card-title {
-    font-size: 0.75rem;
+    font-size: 0.8125rem;
   }
 
   .card-content {
-    font-size: 1.0625rem;
+    font-size: 1.1875rem;
   }
 
   .experience-result {
-    font-size: 1.0625rem;
+    font-size: 1.1875rem;
   }
 
   .btn-secondary {
-    font-size: 0.625rem;
+    font-size: 0.6875rem;
     padding: 0.85rem 1.5rem;
   }
 
   .experience-button {
-    font-size: 0.625rem;
+    font-size: 0.6875rem;
   }
 }
