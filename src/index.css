@@ -3,12 +3,12 @@
   --arcade-bg: #0d0d12;
   --arcade-surface: #16161d;
   --arcade-border: #2a2a35;
-  --arcade-glow: #00ff88;
-  --arcade-glow-dim: rgba(0, 255, 136, 0.4);
+  --arcade-glow: #c9a227;
+  --arcade-glow-dim: rgba(201, 162, 39, 0.4);
   --arcade-text: #e0e0e0;
   --arcade-text-dim: #888;
-  --arcade-accent: #ff00aa;
-  --arcade-accent-dim: rgba(255, 0, 170, 0.5);
+  --arcade-accent: #c9a227;
+  --arcade-accent-dim: rgba(201, 162, 39, 0.5);
   font-family: "Press Start 2P", "Courier New", monospace;
   line-height: 1.6;
   font-weight: 400;
