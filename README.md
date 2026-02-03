@@ -1,8 +1,14 @@
 # ImJustBored.com
 
-Click the button. Get something random.
+A single-page web app that serves random, lightweight “experiences” on demand: facts, micro-challenges, generators (compliments, prophecies, excuses), and small interactions like a coin flip or click game. Each visit draws from a shuffled deck so users see every experience once before any repeat.
 
-A small static SPA with 12 random “experiences”: weird facts, micro-challenges, useless compliments, pointless prophecies, a manual-breathing joke, a click-the-dot mini-game, and a coin flip.
+**Live site:** [imjustbored.com](https://imjustbored.com)
+
+## Tech
+
+- **Frontend:** React 19, TypeScript, Vite  
+- **Styling:** Plain CSS (mobile-first)  
+- **Hosting:** GitHub Pages (static build, GitHub Actions)
 
 ## Run locally
 
@@ -17,15 +23,4 @@ npm run dev
 npm run build
 ```
 
-## Deploy (GitHub Pages)
-
-- Repo: **i-m-just-bored**
-- Push to `main`; the GitHub Actions workflow builds and deploys to GitHub Pages.
-- In the repo: **Settings → Pages → Source** set to **GitHub Actions**.
-- Site URL: `https://<user>.github.io/i-m-just-bored/`
-
-## Stack
-
-- Vite + React + TypeScript
-- Plain CSS, no UI framework
-- No backend, no auth, no analytics
+Output is in `dist/`. The project is configured for deployment to GitHub Pages via the repository’s Actions workflow.
