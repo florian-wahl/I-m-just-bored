@@ -105,6 +105,8 @@
 .experience-button {
   font-family: var(--font-display);
   cursor: pointer;
+  margin-top: 1rem;
+  margin-bottom: 1.25rem;
   padding: 0.5rem 1rem;
   font-size: clamp(0.5rem, 2.5vw, 0.625rem);
   color: var(--arcade-bg);
@@ -120,7 +122,8 @@
 
 .experience-result {
   font-family: var(--font-body);
-  margin-top: 1.25rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
   font-size: clamp(0.875rem, 2.5vw, 1rem);
   font-weight: 400;
   color: var(--arcade-text);
