@@ -51,6 +51,9 @@ function shuffle<T>(array: T[]): T[] {
 export function getNextExperience(
   currentDeck: Experience[]
 ): { experience: Experience; nextDeck: Experience[] } {
+  if (EXPERIENCES.length === 0) {
+    throw new Error('No experiences registered')
+  }
   let deck = currentDeck
   if (deck.length === 0) {
     deck = shuffle(EXPERIENCES)
