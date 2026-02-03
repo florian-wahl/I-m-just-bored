@@ -26,6 +26,9 @@
 }
 
 .btn-primary {
+  /* Reserve space for "I'M JUST BORED" in Press Start 2P to avoid layout shift when font loads */
+  min-height: 5.25rem;
+  min-width: 18rem;
   padding: clamp(1.25rem, 6vw, 1.75rem) clamp(1.75rem, 10vw, 3rem);
   font-size: clamp(0.75rem, 4vw, 1rem);
   line-height: 1.6;

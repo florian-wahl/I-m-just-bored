@@ -1,0 +1,42 @@
+/* Loading screen – buys time for font load, then fades out */
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  background: var(--arcade-bg);
+  z-index: 9999;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.loading-screen--done {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.loading-screen__dot {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: var(--arcade-glow);
+  box-shadow: 0 0 20px var(--arcade-glow-dim);
+  animation: loading-pulse 0.8s ease-in-out infinite;
+}
+
+@keyframes loading-pulse {
+
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: scale(0.9);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
