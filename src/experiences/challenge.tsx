@@ -24,8 +24,26 @@ const CHALLENGE_3: Experience = {
   ),
 }
 
+const CHALLENGE_4: Experience = {
+  id: 'micro-challenge-4',
+  title: 'Micro-Challenge #4',
+  render: () => (
+    <p>Do 5 jumping jacks. No one is watching. Probably.</p>
+  ),
+}
+
+const CHALLENGE_5: Experience = {
+  id: 'micro-challenge-5',
+  title: 'Micro-Challenge #5',
+  render: () => (
+    <p>Name three things you can see right now. Out loud.</p>
+  ),
+}
+
 export const challengeExperiences: Experience[] = [
   CHALLENGE_1,
   CHALLENGE_2,
   CHALLENGE_3,
+  CHALLENGE_4,
+  CHALLENGE_5,
 ]

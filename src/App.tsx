@@ -1,9 +1,16 @@
 import { useState } from 'react'
-import { pickRandomExperience, type Experience } from './experiences'
+import { getNextExperience, type Experience } from './experiences'
 import './App.css'
 
 function App() {
   const [experience, setExperience] = useState<Experience | null>(null)
+  const [deck, setDeck] = useState<Experience[]>([])
+
+  const handlePick = () => {
+    const { experience: next, nextDeck } = getNextExperience(deck)
+    setExperience(next)
+    setDeck(nextDeck)
+  }
 
   return (
     <main className="app">
@@ -11,7 +18,7 @@ function App() {
         <button
           type="button"
           className="btn btn-primary"
-          onClick={() => setExperience(pickRandomExperience())}
+          onClick={handlePick}
         >
           I&apos;m just bored
         </button>
@@ -24,7 +31,7 @@ function App() {
           <button
             type="button"
             className="btn btn-secondary"
-            onClick={() => setExperience(pickRandomExperience())}
+            onClick={handlePick}
           >
             Still bored
           </button>
