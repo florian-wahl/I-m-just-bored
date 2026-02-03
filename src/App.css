@@ -3,7 +3,7 @@
 .app {
   min-height: 100vh;
   min-height: 100dvh;
-  padding: clamp(1.5rem, 6vw, 3rem);
+  padding: clamp(1rem, 5vw, 3rem);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,7 +27,7 @@
 
 .btn-primary {
   padding: clamp(1.25rem, 6vw, 1.75rem) clamp(1.75rem, 10vw, 3rem);
-  font-size: clamp(0.625rem, 3vw, 0.875rem);
+  font-size: clamp(0.6875rem, 3.5vw, 0.875rem);
   line-height: 1.6;
   color: var(--arcade-bg);
   background: var(--arcade-glow);
@@ -50,8 +50,8 @@
 /* Card = arcade screen / CRT panel */
 .card {
   width: 100%;
-  max-width: min(36rem, calc(100vw - 3rem));
-  padding: clamp(1.25rem, 5vw, 2rem);
+  max-width: min(36rem, calc(100vw - 2rem));
+  padding: clamp(1.5rem, 5vw, 2rem);
   background: var(--arcade-surface);
   border: 4px solid var(--arcade-border);
   box-shadow:
@@ -63,7 +63,7 @@
 .card-title {
   font-family: var(--font-display);
   margin: 0 0 1rem;
-  font-size: 0.5rem;
+  font-size: clamp(0.625rem, 2.2vw, 0.75rem);
   color: var(--arcade-glow);
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -72,7 +72,7 @@
 /* Main text and commentary – readable body font */
 .card-content {
   font-family: var(--font-body);
-  font-size: clamp(0.875rem, 2.5vw, 1rem);
+  font-size: clamp(1rem, 2.8vw, 1.125rem);
   line-height: 1.6;
   color: var(--arcade-text);
 }
@@ -87,8 +87,8 @@
 
 /* Secondary = “Still bored” */
 .btn-secondary {
-  padding: 0.75rem 1.25rem;
-  font-size: 0.5rem;
+  padding: 0.85rem 1.5rem;
+  font-size: clamp(0.625rem, 2.2vw, 0.75rem);
   color: var(--arcade-glow);
   background: transparent;
   border: 3px solid var(--arcade-glow);
@@ -107,8 +107,8 @@
   cursor: pointer;
   margin-top: 1rem;
   margin-bottom: 1.25rem;
-  padding: 0.5rem 1rem;
-  font-size: clamp(0.5rem, 2.5vw, 0.625rem);
+  padding: 0.6rem 1.15rem;
+  font-size: clamp(0.5625rem, 2.5vw, 0.75rem);
   color: var(--arcade-bg);
   background: var(--arcade-glow);
   border: 2px solid var(--arcade-glow);
@@ -124,7 +124,7 @@
   font-family: var(--font-body);
   margin-top: 1.5rem;
   margin-bottom: 0;
-  font-size: clamp(0.875rem, 2.5vw, 1rem);
+  font-size: clamp(1rem, 2.8vw, 1.125rem);
   font-weight: 400;
   color: var(--arcade-text);
 }
@@ -132,7 +132,7 @@
 .experience-subtitle {
   font-family: var(--font-body);
   margin-top: 0.75rem;
-  font-size: 0.8125rem;
+  font-size: clamp(0.875rem, 2.2vw, 1rem);
   color: var(--arcade-text-dim);
 }
 
@@ -145,8 +145,8 @@
 }
 
 .dot {
-  width: clamp(3rem, 12vw, 4rem);
-  height: clamp(3rem, 12vw, 4rem);
+  width: clamp(3.5rem, 14vw, 4.5rem);
+  height: clamp(3.5rem, 14vw, 4.5rem);
   border-radius: 50%;
   background: var(--arcade-glow);
   border: 3px solid var(--arcade-bg);
