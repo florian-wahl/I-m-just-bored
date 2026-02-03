@@ -1,25 +1,32 @@
+/* Retro arcade – dark theme only */
 :root {
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-  line-height: 1.5;
+  --arcade-bg: #0d0d12;
+  --arcade-surface: #16161d;
+  --arcade-border: #2a2a35;
+  --arcade-glow: #00ff88;
+  --arcade-glow-dim: rgba(0, 255, 136, 0.4);
+  --arcade-text: #e0e0e0;
+  --arcade-text-dim: #888;
+  --arcade-accent: #ff00aa;
+  --arcade-accent-dim: rgba(255, 0, 170, 0.5);
+  font-family: "Press Start 2P", "Courier New", monospace;
+  line-height: 1.6;
   font-weight: 400;
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.9);
-  background-color: #1a1a1a;
+  color: var(--arcade-text);
+  background-color: var(--arcade-bg);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #1a1a1a;
-    background-color: #f5f5f5;
-  }
+  overflow-x: hidden;
 }

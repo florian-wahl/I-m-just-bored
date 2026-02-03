@@ -1,165 +1,208 @@
-/* Mobile-first layout */
+/* Retro arcade – mobile first, responsive */
+
 .app {
-    margin: 0 auto;
-    padding: 1.5rem;
-    max-width: 36rem;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    box-sizing: border-box;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: clamp(1.5rem, 6vw, 3rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
 }
 
-.title {
-    margin: 0 0 0.5rem;
-    font-size: 1.75rem;
-    font-weight: 700;
-    line-height: 1.2;
-}
-
-.subtitle {
-    margin: 0 0 1.5rem;
-    font-size: 1rem;
-    opacity: 0.85;
-}
-
-/* Buttons */
+/* Primary arcade button – landing + focus */
 .btn {
-    font: inherit;
-    cursor: pointer;
-    border: none;
-    border-radius: 0.5rem;
-    padding: 0.75rem 1.5rem;
-    font-weight: 600;
-    transition: transform 0.1s ease, opacity 0.15s ease;
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  font-weight: 400;
+  transition: transform 0.1s ease, box-shadow 0.2s ease;
 }
 
 .btn:active {
-    transform: scale(0.98);
+  transform: scale(0.97);
 }
 
 .btn-primary {
-    background: var(--btn-primary-bg, #3b82f6);
-    color: var(--btn-primary-color, #fff);
-    font-size: 1.125rem;
-    padding: 1rem 2rem;
-    margin-bottom: 1.5rem;
+  padding: clamp(1.25rem, 6vw, 1.75rem) clamp(1.75rem, 10vw, 3rem);
+  font-size: clamp(0.625rem, 3vw, 0.875rem);
+  line-height: 1.6;
+  color: var(--arcade-bg);
+  background: var(--arcade-glow);
+  box-shadow:
+    0 0 0 3px var(--arcade-bg),
+    0 0 0 5px var(--arcade-glow),
+    0 0 20px var(--arcade-glow-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
 }
 
 .btn-primary:hover {
-    opacity: 0.95;
+  box-shadow:
+    0 0 0 3px var(--arcade-bg),
+    0 0 0 5px var(--arcade-glow),
+    0 0 24px var(--arcade-glow-dim),
+    0 0 40px var(--arcade-glow-dim);
 }
 
-.btn-secondary {
-    background: var(--btn-secondary-bg, transparent);
-    color: var(--btn-secondary-color, inherit);
-    border: 2px solid currentColor;
-    font-size: 0.9375rem;
-    margin-top: 1rem;
-}
-
-.btn-secondary:hover {
-    opacity: 0.9;
-}
-
-/* Card */
+/* Card = arcade screen / CRT panel */
 .card {
-    width: 100%;
-    padding: 1.5rem;
-    border-radius: 0.75rem;
-    background: var(--card-bg, rgba(255, 255, 255, 0.06));
-    border: 1px solid var(--card-border, rgba(255, 255, 255, 0.12));
-    text-align: left;
-    box-sizing: border-box;
+  width: 100%;
+  max-width: min(36rem, calc(100vw - 3rem));
+  padding: clamp(1.25rem, 5vw, 2rem);
+  background: var(--arcade-surface);
+  border: 4px solid var(--arcade-border);
+  box-shadow:
+    inset 0 0 0 2px rgba(0, 0, 0, 0.3),
+    0 0 0 2px var(--arcade-glow-dim);
+  text-align: left;
 }
 
 .card-title {
-    margin: 0 0 1rem;
-    font-size: 0.875rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    opacity: 0.8;
+  margin: 0 0 1rem;
+  font-size: 0.5rem;
+  color: var(--arcade-glow);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 .card-content {
-    font-size: 1.0625rem;
-    line-height: 1.6;
+  font-size: clamp(0.5rem, 2.5vw, 0.75rem);
+  line-height: 1.8;
+  color: var(--arcade-text);
 }
 
 .card-content p {
-    margin: 0 0 0.75rem;
+  margin: 0 0 1rem;
 }
 
 .card-content p:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
-/* Experience-specific (buttons inside card, dot game, etc.) */
+/* Secondary = “Still bored” */
+.btn-secondary {
+  padding: 0.75rem 1.25rem;
+  font-size: 0.5rem;
+  color: var(--arcade-glow);
+  background: transparent;
+  border: 3px solid var(--arcade-glow);
+  box-shadow: 0 0 12px var(--arcade-glow-dim);
+  text-transform: uppercase;
+}
+
+.btn-secondary:hover {
+  background: var(--arcade-glow-dim);
+  box-shadow: 0 0 16px var(--arcade-glow-dim);
+}
+
+/* Experience content – buttons inside card */
 .experience-button {
-    font: inherit;
-    cursor: pointer;
-    padding: 0.6rem 1.2rem;
-    border-radius: 0.5rem;
-    border: 1px solid var(--card-border, rgba(255, 255, 255, 0.2));
-    background: var(--btn-secondary-bg, transparent);
-    color: inherit;
-    font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-size: clamp(0.5rem, 2.5vw, 0.625rem);
+  color: var(--arcade-bg);
+  background: var(--arcade-glow);
+  border: 2px solid var(--arcade-glow);
+  box-shadow: 0 0 8px var(--arcade-glow-dim);
+  transition: box-shadow 0.2s ease;
 }
 
 .experience-button:hover {
-    opacity: 0.9;
+  box-shadow: 0 0 12px var(--arcade-glow-dim);
 }
 
 .experience-result {
-    margin-top: 1rem;
-    font-weight: 500;
+  margin-top: 1.25rem;
+  font-weight: 400;
+  color: var(--arcade-text);
 }
 
 .experience-subtitle {
-    margin: 0.25rem 0 0;
-    font-size: 0.9rem;
-    opacity: 0.8;
+  margin-top: 0.75rem;
+  font-size: 0.5rem;
+  color: var(--arcade-text-dim);
 }
 
+/* Dot game */
 .dot-game {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
 }
 
 .dot {
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
-    background: var(--btn-primary-bg, #3b82f6);
-    border: none;
-    cursor: pointer;
-    transition: transform 0.1s ease;
+  width: clamp(3rem, 12vw, 4rem);
+  height: clamp(3rem, 12vw, 4rem);
+  border-radius: 50%;
+  background: var(--arcade-glow);
+  border: 3px solid var(--arcade-bg);
+  box-shadow: 0 0 16px var(--arcade-glow-dim);
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.2s ease;
 }
 
 .dot:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
+  box-shadow: 0 0 20px var(--arcade-glow-dim);
 }
 
 .dot:active {
-    transform: scale(0.95);
+  transform: scale(0.95);
 }
 
-/* Larger screens */
+/* Tablet and up – slightly larger text where readable */
 @media (min-width: 480px) {
-    .app {
-        padding: 2rem;
-    }
+  .app {
+    gap: 2.5rem;
+  }
 
-    .title {
-        font-size: 2rem;
-    }
+  .card {
+    padding: 1.75rem;
+  }
 
-    .card {
-        padding: 2rem;
-    }
+  .card-title {
+    font-size: 0.625rem;
+  }
+
+  .card-content {
+    font-size: 0.625rem;
+  }
+
+  .experience-button {
+    font-size: 0.625rem;
+  }
+
+  .experience-subtitle {
+    font-size: 0.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .app {
+    padding: clamp(2rem, 8vw, 4rem);
+    gap: 3rem;
+  }
+
+  .card {
+    padding: 2rem;
+  }
+
+  .card-title,
+  .card-content {
+    font-size: 0.75rem;
+  }
+
+  .btn-secondary {
+    font-size: 0.625rem;
+    padding: 0.85rem 1.5rem;
+  }
+
+  .experience-button {
+    font-size: 0.625rem;
+  }
 }
