@@ -4,7 +4,7 @@ const CHALLENGE_1: Experience = {
   id: 'micro-challenge-1',
   title: 'Micro-Challenge #1',
   render: () => (
-    <p>Stand up and stretch for 15 seconds. Reach for the ceiling, then touch your toes—or just wave your arms. Yes, now.</p>
+    <p>Stand up and stretch for 15 seconds. Reach for the ceiling, then touch your toes, or just wave your arms. Yes, now.</p>
   ),
 }
 
@@ -36,7 +36,7 @@ const CHALLENGE_5: Experience = {
   id: 'micro-challenge-5',
   title: 'Micro-Challenge #5',
   render: () => (
-    <p>Name three things you can see right now—out loud. Objects, colors, shapes. It&apos;s a tiny grounding exercise. Go.</p>
+    <p>Name three things you can see right now, out loud. Objects, colors, shapes. It&apos;s a tiny grounding exercise. Go.</p>
   ),
 }
 

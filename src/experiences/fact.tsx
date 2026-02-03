@@ -12,7 +12,7 @@ const FACT_2: Experience = {
   id: 'weird-fact-2',
   title: 'Weird Fact #2',
   render: () => (
-    <p>Bananas are berries. Strawberries aren&apos;t. Botanically, a berry has to have seeds on the inside—so grapes and kiwis count too.</p>
+    <p>Bananas are berries. Strawberries aren&apos;t. Botanically, a berry has to have seeds on the inside, so grapes and kiwis count too.</p>
   ),
 }
 
@@ -28,7 +28,7 @@ const FACT_4: Experience = {
   id: 'weird-fact-4',
   title: 'Weird Fact #4',
   render: () => (
-    <p>Wombat poop is cube-shaped. Scientists think their intestines form the shape so the cubes stack and don&apos;t roll away—handy for marking territory.</p>
+    <p>Wombat poop is cube-shaped. Scientists think their intestines form the shape so the cubes stack and don&apos;t roll away, which is handy for marking territory.</p>
   ),
 }
 

@@ -7,7 +7,7 @@ function YesNoContent() {
   const flip = () => setResult(Math.random() < 0.5 ? 'Yes' : 'No')
   return (
     <div>
-      <p>Stuck between two options? Let the coin of fate decide.</p>
+      <p>Stuck between two options? Let the universe decide.</p>
       <button type="button" className="experience-button" onClick={flip}>
         Yes or No?
       </button>

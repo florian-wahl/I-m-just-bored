@@ -5,7 +5,7 @@ export const breathingExperience: Experience = {
   title: 'Manual Breathing',
   render: () => (
     <>
-      <p>Breathe in for 4 seconds, hold for 4, exhale for 4. Do it once—or don&apos;t.</p>
+      <p>Breathe in for 4 seconds, hold for 4, exhale for 4. Do it once, or don&apos;t.</p>
       <p>Either way: you are now manually breathing. Sorry.</p>
     </>
   ),
